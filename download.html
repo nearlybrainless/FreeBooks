@@ -52,11 +52,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <div class="container">
     <h1>🔥 Grab Your Copy Now</h1>
-    <p>Here's your free PDF of **“The Subtle Art of Not Giving a F*ck”** by Mark Manson. Click the button to download.</p>
-    <a class="btn-download" href="https://pdfcoffee.com/download/pdf-the-subtle-art-of-not-giving-a-fck-by-mark-manson-pdf-free.html" target="_blank" rel="noopener">📥 Download PDF</a>
-    <p style="margin-top: 2rem;">
-      Finished? <a href="thankyou.html">Check out more free resources →</a>
-    </p>
+    <p>Here's your free PDF of <strong>“The Subtle Art of Not Giving a F*ck”</strong>. Click below to download.</p>
+    <button class="btn-download" onclick="handleDownload()">📥 Download PDF</button>
   </div>
+
+  <script>
+    function handleDownload() {
+      // Open the PDF in a new tab
+      window.open('https://pdfcoffee.com/download/pdf-the-subtle-art-of-not-giving-a-fck-by-mark-manson-pdf-free.html', '_blank');
+
+      // Redirect to thank you page in 1 second
+      setTimeout(function () {
+        window.location.href = 'thankyou.html';
+      }, 1000);
+    }
+  </script>
 </body>
 </html>
